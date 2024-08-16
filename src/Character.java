@@ -37,4 +37,5 @@ public class Character
     public void setAttack(int attack) {
         this.attack = attack;
     }
-}
+
+}//end Character class
