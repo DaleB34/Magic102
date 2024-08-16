@@ -29,8 +29,9 @@ public class Bard extends Character
 
     @Override
     public String toString() {
-        String output = "instrument " + instrument +
-                "\nmana " + mana;
+        String output = super.toString() +
+                "\nInstrument: " + instrument +
+                "\nMana: " + mana;
         return output;
     }
 
