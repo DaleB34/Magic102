@@ -9,17 +9,18 @@ public class Bard extends Character
         this.mana = mana;
     }
 
-    public java.lang.String getInstrument() {
+    //getters
+    public String getInstrument() {
         return instrument;
     }
 
-    public void setInstrument(java.lang.String instrument) {
-        this.instrument = instrument;
-    }
-
-
     public int getMana() {
         return mana;
+    }
+
+    //setters
+    public void setInstrument(String instrument) {
+        this.instrument = instrument;
     }
 
     public void setMana(int mana) {
