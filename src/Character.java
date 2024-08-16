@@ -38,4 +38,13 @@ public class Character
         this.attack = attack;
     }
 
+    //toString
+    @Override
+    public String toString() {
+        String output = "Name: " + name +
+                "\nMoney: " + money +
+                "\nAttack: " + attack;
+        return output;
+    }
+
 }//end Character class
