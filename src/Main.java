@@ -1,9 +1,8 @@
 public class Main {
     public static void main(String[] args)
     {
-        Bard saltine = new Bard("flute", 10, 100);
-        Bard skilledBard = new Bard("trombone", 200, 100000000);
+        Bard bard = new Bard("Bard", 1000, 10, "Horn", 100);
 
-        System.out.println(saltine.toString());
+        System.out.println(bard.toString());
     }
 }
