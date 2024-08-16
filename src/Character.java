@@ -12,8 +12,29 @@ public class Character
         this.attack = attack;
     }
 
+    //getters
+    public String getName() {
+        return name;
+    }
 
+    public int getMoney() {
+        return money;
+    }
 
+    public int getAttack() {
+        return attack;
+    }
 
+    //setters
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public void setMoney(int money) {
+        this.money = money;
+    }
+
+    public void setAttack(int attack) {
+        this.attack = attack;
+    }
 }
