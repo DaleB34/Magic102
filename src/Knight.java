@@ -30,8 +30,6 @@ public class Knight extends Character
     }
 
     //setters
-
-
     public void setSwordMaterial(String swordMaterial) {
         this.swordMaterial = swordMaterial;
     }
@@ -42,5 +40,15 @@ public class Knight extends Character
 
     public void setOnGear(boolean onGear) {
         this.onGear = onGear;
+    }
+
+    //toString
+    @Override
+    public String toString() {
+        String output = super.toString() +
+                "\nSword Material: " + swordMaterial +
+                "\nBench Max: " + bench +
+                "\nOn The Gear: " + onGear;
+        return output;
     }
 }
