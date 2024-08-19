@@ -40,4 +40,14 @@ public class Wizard extends Character
     public void setMana(int mana) {
         this.mana = mana;
     }
+
+    //toString
+    @Override
+    public String toString() {
+        String output = super.toString() +
+                "\nStaff Name: " + staffName +
+                "\nHouse: " + house +
+                "\nmana " + mana;
+        return output;
+    }
 }
