@@ -1,4 +1,4 @@
-public class Knight
+public class Knight extends Character
 {
     //instance variables
     String swordMaterial;
@@ -7,11 +7,13 @@ public class Knight
 
     //constructor
 
-    public Knight(String swordMaterial, int bench, boolean onGear) {
+    public Knight(String name, int money, int attack, String swordMaterial, int bench, boolean onGear) {
+        super(name, money, attack);
         this.swordMaterial = swordMaterial;
         this.bench = bench;
         this.onGear = onGear;
     }
+
 
     //getters
 

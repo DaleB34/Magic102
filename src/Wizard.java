@@ -1,4 +1,4 @@
-public class Wizard
+public class Wizard extends Character
 {
     //instance variables
     String staffName;
@@ -6,7 +6,10 @@ public class Wizard
     int mana;
 
     //constructor
-    public Wizard(String staffName, String house, int mana) {
+
+
+    public Wizard(String name, int money, int attack, String staffName, String house, int mana) {
+        super(name, money, attack);
         this.staffName = staffName;
         this.house = house;
         this.mana = mana;
