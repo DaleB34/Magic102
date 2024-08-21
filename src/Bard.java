@@ -10,8 +10,8 @@ public class Bard extends Character
     }
 
     //getters
-    public Weapon getWeapon() {
-        return weapon;
+    public String getWeapon() {
+        return weapon.toString();
     }
 
     public int getMana() {
@@ -31,7 +31,7 @@ public class Bard extends Character
     @Override
     public String toString() {
         String output = super.toString() +
-                "\nWeapon: " + weapon +
+                "\nWeapon: " + getWeapon() +
                 "\nMana: " + mana;
         return output;
     }
