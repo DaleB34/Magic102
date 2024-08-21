@@ -1,23 +1,23 @@
 public class Wizard extends Character
 {
     //instance variables
-    String staffName;
+    Staff staff;
     String house;
     int mana;
 
     //constructor
 
 
-    public Wizard(String name, int money, int attack, String staffName, String house, int mana) {
+    public Wizard(String name, int money, int attack, Staff staff, String house, int mana) {
         super(name, money, attack);
-        this.staffName = staffName;
+        this.staff = staff;
         this.house = house;
         this.mana = mana;
     }
 
     //getters
-    public String getStaffName() {
-        return staffName;
+    public String getStaff() {
+        return staff.toString();
     }
 
     public String getHouse() {
@@ -29,8 +29,8 @@ public class Wizard extends Character
     }
 
     //setters
-    public void setStaffName(String staffName) {
-        this.staffName = staffName;
+    public void setStaff(Staff staff) {
+        this.staff = staff;
     }
 
     public void setHouse(String house) {
@@ -45,7 +45,7 @@ public class Wizard extends Character
     @Override
     public String toString() {
         String output = super.toString() +
-                "\nStaff Name: " + staffName +
+                "\nStaff: " + staff +
                 "\nHouse: " + house +
                 "\nmana " + mana;
         return output;
