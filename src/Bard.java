@@ -1,17 +1,17 @@
 public class Bard extends Character
 {
-     String instrument;
+     Weapon weapon;
      int mana;
 
-    public Bard(String name, int money, int attack, String instrument, int mana) {
+    public Bard(String name, int money, int attack, Weapon weapon, int mana) {
         super(name, money, attack);
-        this.instrument = instrument;
+        this.weapon = weapon;
         this.mana = mana;
     }
 
     //getters
-    public String getInstrument() {
-        return instrument;
+    public Weapon getWeapon() {
+        return weapon;
     }
 
     public int getMana() {
@@ -19,8 +19,9 @@ public class Bard extends Character
     }
 
     //setters
-    public void setInstrument(String instrument) {
-        this.instrument = instrument;
+
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
     }
 
     public void setMana(int mana) {
@@ -30,7 +31,7 @@ public class Bard extends Character
     @Override
     public String toString() {
         String output = super.toString() +
-                "\nInstrument: " + instrument +
+                "\nWeapon: " + weapon +
                 "\nMana: " + mana;
         return output;
     }
