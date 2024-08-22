@@ -46,8 +46,8 @@ public class Knight extends Character
     @Override
     public String toString() {
         String output = super.toString() +
-                "\nSword: " + sword +
-                "\nBench Max: " + bench +
+                "\nSword: " + sword.toString() +
+                "\nMax Bench: " + bench +
                 "\nOn The Gear: " + onGear;
         return output;
     }

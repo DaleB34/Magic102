@@ -31,7 +31,7 @@ public class Bard extends Character
     @Override
     public String toString() {
         String output = super.toString() +
-                "\nWeapon: " + getWeapon() +
+                "\nWeapon " + getWeapon() +
                 "\nMana: " + mana;
         return output;
     }
