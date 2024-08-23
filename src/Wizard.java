@@ -15,6 +15,29 @@ public class Wizard extends Character
         this.mana = mana;
     }
 
+    //brain methods
+    @Override
+    public void attack(Character target)
+    {
+        System.out.println(name + " has attacked " + target.getName() + " with the " );
+    }
+
+    public String castSpell()
+    {
+        //start of the message
+        String output = "staff " + staff.getName() + "! The " + house;
+
+        //addons to the message
+        if(staff.getElement().equals("Air"))
+        {
+            output+= " special "
+        }
+
+        return output;
+    }
+
+
+
     //getters
     public String getStaff() {
         return staff.toString();
