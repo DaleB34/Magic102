@@ -12,6 +12,14 @@ public class Character
         this.attack = attack;
     }
 
+    //brain methods
+    public void attack(Character target)
+    {
+        System.out.println(name + " has attacked " + target.getName() + "!\n"
+                + target.getName() + " has taken " + attack + " damage!");
+    }
+
+
     //getters
     public String getName() {
         return name;
