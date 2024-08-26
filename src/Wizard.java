@@ -19,18 +19,34 @@ public class Wizard extends Character
     @Override
     public void attack(Character target)
     {
-        System.out.println(name + " has attacked " + target.getName() + " with the " );
+        System.out.println(name + " has attacked " + target.getName() + " with the " + castSpell());
     }
 
     public String castSpell()
     {
         //start of the message
-        String output = "staff " + staff.getName() + "! The " + house;
+        String output = staff.getName() + "! They have used the " + house;
 
         //addons to the message
         if(staff.getElement().equals("Air"))
         {
-            output+= " special "
+            output+= " wind ball special thingy spell!";
+        }
+        else if (staff.getElement().equals("Fire"))
+        {
+            output+= " fireball of death spell!";
+        }
+        else if (staff.getElement().equals("Earth"))
+        {
+            output+= " Ancient Power Spell!";
+        }
+        else if(staff.getElement().equals("Water"))
+        {
+            output+= " tsunami spell!";
+        }
+        else
+        {
+            output+= " Avada Kadavra!";
         }
 
         return output;
