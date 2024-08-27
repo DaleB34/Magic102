@@ -17,6 +17,22 @@ public class Weapon
         this.maxMana = maxMana;
     }
 
+    //brain methods
+    public String whack(Character target)
+    {
+        String output = "whacked " + target + " on the head for ";
+
+        if(defense > offense)
+        {
+            output+= offense/15 + " damage!";
+        }
+        else
+            output+= offense/7.5 + " damage!";
+
+        return output;
+    }
+
+
     //getters
 
     public String getName() {
