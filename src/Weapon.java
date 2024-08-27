@@ -32,6 +32,15 @@ public class Weapon
         return output;
     }
 
+    public void destroy()
+    {
+        System.out.println("The weapon " + name + " has been destroyed! All of its power has been diminished!");
+        offense = 0;
+        defense = 0;
+        minMana = 0;
+        maxMana = 0;
+        System.out.println(toString());
+    }
 
     //getters
 
