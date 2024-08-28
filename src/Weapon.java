@@ -39,7 +39,7 @@ public class Weapon
         defense = 0;
         minMana = 0;
         maxMana = 0;
-        System.out.println(toString());
+        System.out.println("Weapon " + toString());
     }
 
     //getters
