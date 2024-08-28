@@ -13,6 +13,19 @@ public class Staff extends Weapon
         this.element = element;
     }
 
+    //brain methods
+    @Override
+    public void destroy()
+    {
+        System.out.println("The weapon " + name + " has been destroyed! All of its power has been diminished!");
+        offense = 0;
+        defense = 0;
+        minMana = 0;
+        maxMana = 0;
+        element = "none";
+        System.out.println("Weapon " + toString());
+    }
+
     //getters
 
     public String getBrand() {
