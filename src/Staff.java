@@ -22,7 +22,7 @@ public class Staff extends Weapon
         defense = 0;
         minMana = 0;
         maxMana = 0;
-        element = "none";
+        element = "None";
         System.out.println("Weapon " + toString());
     }
 
@@ -51,7 +51,7 @@ public class Staff extends Weapon
     public String toString() {
         String output = super.toString() +
                 "\nBrand: " + brand +
-                "\nElement " + element;
+                "\nElement: " + element;
         return output;
     }
 }
