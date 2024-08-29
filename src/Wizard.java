@@ -52,6 +52,30 @@ public class Wizard extends Character
         return output;
     }
 
+    public void turnEvil()
+    {
+        if(staff.getElement().equals("Air"))
+        {
+            System.out.println(name + " has summoned a tornado and wiped out every village in a 100 mile range!");
+        }
+        else if (staff.getElement().equals("Fire"))
+        {
+            System.out.println(name + " burned all the houses in his hometown to ashes!");
+        }
+        else if (staff.getElement().equals("Earth"))
+        {
+            System.out.println(name + " caused a giant earthquake and split the Earth into two!");
+        }
+        else if(staff.getElement().equals("Water"))
+        {
+            System.out.println(name + " flooded the entire Earth!");
+        }
+        else
+        {
+            System.out.println(name + " poured milk before the cereal!");
+        }
+    }
+
 
 
     //getters
