@@ -9,6 +9,14 @@ public class Bard extends Character
         this.mana = mana;
     }
 
+    //brain methods
+    public void attack(Character target)
+    {
+        System.out.println(name + " has attacked " + target.getName() + " with their weapon "
+                + weapon.getName() + " for " + weapon.getOffense() + " damage!");
+    }
+
+
     //getters
     public String getWeapon() {
         return weapon.toString();
