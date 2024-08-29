@@ -16,6 +16,12 @@ public class Bard extends Character
                 + weapon.getName() + " for " + weapon.getOffense() + " damage!");
     }
 
+    public void sing(String song, Character target)
+    {
+        System.out.println(name + " has forcefully sang the song " + song + " to " +
+                target.getName() + ", making their eardrums blow out!");
+    }
+
 
     //getters
     public String getWeapon() {
