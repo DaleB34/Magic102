@@ -19,6 +19,11 @@ public class Character
                 + target.getName() + " has taken " + attack + " damage!");
     }
 
+    public void die(String reason)
+    {
+        System.out.println(name + " has died because of " + reason + "!");
+    }
+
 
     //getters
     public String getName() {
