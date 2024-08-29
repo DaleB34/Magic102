@@ -18,9 +18,12 @@ public class Bard extends Character
 
     public void sing(String song, Character target)
     {
+        int songAmount = (int) (mana * money * 0.1);
         System.out.println(name + " has forcefully sang the song " + song + " to " +
-                target.getName() + ", making their eardrums blow out!");
+                target.getName() + songAmount + " times, making their eardrums blow out!");
     }
+
+    public void
 
 
     //getters
