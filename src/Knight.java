@@ -22,6 +22,12 @@ public class Knight extends Character
                 " with their sword " + sword.getName() + "!");
     }
 
+    public void spin(Character target)
+    {
+        int secondsSpinning = (int) (bench * attack * 0.01);
+        System.out.println(name + " spins to win on " + target.getName() + " for " +
+                secondsSpinning + " seconds, making them uninstall!");
+    }
 
     //getters
 
