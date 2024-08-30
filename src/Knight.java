@@ -14,6 +14,14 @@ public class Knight extends Character
         this.onGear = onGear;
     }
 
+    //brain methods
+    @Override
+    public void attack(Character target)
+    {
+        System.out.println(name + " has cut down " + target.getName() +
+                " with their sword " + sword.getName() + "!");
+    }
+
 
     //getters
 
