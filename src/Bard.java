@@ -23,7 +23,17 @@ public class Bard extends Character
                 target.getName() + songAmount + " times, making their eardrums blow out!");
     }
 
-    public void
+    public void gankMid(int manaUsed, Character target)
+    {
+        if(manaUsed > mana )
+        {
+            System.out.println("You have no mana!! You have no mana!!");
+        }
+        else
+        {
+            System.out.println(target.getName() + " has been slain.");
+        }
+    }
 
 
     //getters
