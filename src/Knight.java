@@ -24,9 +24,18 @@ public class Knight extends Character
 
     public void spin(Character target)
     {
-        int secondsSpinning = (int) (bench * attack * 0.01);
+        int secondsSpinning = (int) (bench * sword.getOffense() * 0.01);
         System.out.println(name + " spins to win on " + target.getName() + " for " +
                 secondsSpinning + " seconds, making them uninstall!");
+    }
+
+    public void flashR(Character target)
+    {
+        int damageDone = (int) (bench * attack * money * 0.01);
+        if (onGear)
+            damageDone*= 3;
+        System.out.println(name + "has pressed the F key, followed by the R key to do " + damageDone
+        + " to " + target + "!");
     }
 
     //getters
