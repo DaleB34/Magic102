@@ -28,11 +28,13 @@ public class Main {
         LinkedList.printList(list);
 
         //Calling brain methods
+        System.out.println("\nBrain Methods: \n");
+
         laios.attack(garen);
 
         System.out.println();
 
-        laios.die("barked too loudly");
+        laios.die("barking too loudly");
 
         System.out.println();
 
@@ -41,6 +43,9 @@ public class Main {
         System.out.println();
 
         milio.gankMid(500, bard);
+
+        System.out.println();
+
         bard.gankMid(1000, milio);
 
         System.out.println();
@@ -54,6 +59,9 @@ public class Main {
         System.out.println();
 
         laios.crashout(garen, bfs);
+
+        System.out.println();
+
         bfs.destroy();
 
         System.out.println();
@@ -65,6 +73,9 @@ public class Main {
 
         velkoz.turnEvil();
         ryze.turnEvil();
+
+        System.out.println("\n\nAmount of characters: " + Character.getCount());
+        System.out.println("Amount of weapons: " + Weapon.getCount());
 
     }
 }
