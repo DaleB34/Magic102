@@ -34,6 +34,11 @@ public class Character
         System.out.println(name + " has died because of " + reason + "!");
     }
 
+    public void crashout(Character target, Weapon weapon)
+    {
+        System.out.println(name + " " + weapon.whack(target));
+    }
+
 
     //getters
     public String getName() {
