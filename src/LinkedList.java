@@ -9,18 +9,18 @@ public class LinkedList
 
     static class Node
     {
-        int data;
+        Character data;
         Node next;
 
         //constructor
-        Node(int d)
+        Node(Character d)
         {
             data = d;
             next = null;
         }
     }//end Node
 
-    public static LinkedList insert(LinkedList list, int data)
+    public static LinkedList insert(LinkedList list, Character data)
     {
         Node newNode = new Node(data);
 
@@ -47,15 +47,17 @@ public class LinkedList
     {
         Node currNode = list.head;
 
-        System.out.print("LinkedList: ");
+        System.out.print("Character List: \n");
+        int count = 1;
 
         // Traverse through the LinkedList
         while (currNode != null) {
             // Print the data at current node
-            System.out.print(currNode.data + " ");
+            System.out.println(count + ":" +currNode.data.toString() + "\n ");
 
             // Go to next node
             currNode = currNode.next;
+            count++;
         }
     }
 
