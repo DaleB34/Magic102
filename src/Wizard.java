@@ -119,7 +119,7 @@ public class Wizard extends Character
         String output = super.toString() +
                 "\nStaff: " + staff +
                 "\nHouse: " + house +
-                "\nmana " + mana;
+                "\nMana: " + mana;
         return output;
     }
 }
