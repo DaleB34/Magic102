@@ -32,7 +32,7 @@ public class Weapon
     //brain methods
     public String whack(Character target)
     {
-        String output = target + " has been whacked on the head for ";
+        String output = target.getName() + " has been whacked on the head for ";
 
         if(defense > offense)
         {
