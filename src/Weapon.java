@@ -19,6 +19,16 @@ public class Weapon
         count++;
     }
 
+    //default constructor
+    public Weapon()
+    {
+        name = "";
+        offense = 0;
+        defense = 0;
+        minMana = 0;
+        maxMana = 0;
+    }
+
     //brain methods
     public String whack(Character target)
     {

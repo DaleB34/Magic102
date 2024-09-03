@@ -3,10 +3,21 @@ public class Bard extends Character
      Weapon weapon;
      int mana;
 
+     //constructor
     public Bard(String name, int money, int attack, Weapon weapon, int mana) {
         super(name, money, attack);
         this.weapon = weapon;
         this.mana = mana;
+    }
+
+    //default constructor
+    public Bard()
+    {
+        name = "";
+        money = 0;
+        attack = 0;
+        weapon = null;
+        mana = 0;
     }
 
     //brain methods

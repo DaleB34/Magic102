@@ -6,13 +6,22 @@ public class Wizard extends Character
     int mana;
 
     //constructor
-
-
     public Wizard(String name, int money, int attack, Staff staff, String house, int mana) {
         super(name, money, attack);
         this.staff = staff;
         this.house = house;
         this.mana = mana;
+    }
+
+    //default constructor
+    public Wizard()
+    {
+        name = "";
+        money = 0;
+        attack = 0;
+        staff = null;
+        house = ""; //homeless
+        mana = 0;
     }
 
     //brain methods

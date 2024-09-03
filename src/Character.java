@@ -14,6 +14,14 @@ public class Character
         count++;
     }
 
+    //default constructor
+    public Character()
+    {
+        name = "";
+        money = 0;
+        attack = 0;
+    }
+
     //brain methods
     public void attack(Character target)
     {

@@ -5,13 +5,24 @@ public class Knight extends Character
     int bench; //pounds
     boolean onGear; //gear refers to performance enhancing potions
 
-    //constructor
 
+    //constructor
     public Knight(String name, int money, int attack, Weapon sword, int bench, boolean onGear) {
         super(name, money, attack);
         this.sword = sword;
         this.bench = bench;
         this.onGear = onGear;
+    }
+
+    //default constructor
+    public Knight()
+    {
+        name = "";
+        money = 0;
+        attack = 0;
+        sword = null;
+        bench = 0;
+        onGear = false;
     }
 
     //brain methods

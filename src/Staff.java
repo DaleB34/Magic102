@@ -13,6 +13,18 @@ public class Staff extends Weapon
         this.element = element;
     }
 
+    //default constructor
+    public Staff()
+    {
+        name = "";
+        offense = 0;
+        defense = 0;
+        minMana = 0;
+        maxMana = 0;
+        brand = "";
+        element = "";
+    }
+
     //brain methods
     @Override
     public void destroy()
