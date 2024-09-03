@@ -4,12 +4,14 @@ public class Character
     String name;
     int money;
     int attack;
+    private static int count;
 
     // constructor
     public Character(String name, int money, int attack) {
         this.name = name;
         this.money = money;
         this.attack = attack;
+        count++;
     }
 
     //brain methods
@@ -36,6 +38,11 @@ public class Character
 
     public int getAttack() {
         return attack;
+    }
+
+    public static int getCount()
+    {
+        return count;
     }
 
     //setters
