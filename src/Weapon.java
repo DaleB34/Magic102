@@ -6,6 +6,7 @@ public class Weapon
     int defense;
     int minMana;
     int maxMana;
+    private static int count;
 
     //constructor
 
@@ -15,6 +16,7 @@ public class Weapon
         this.defense = defense;
         this.minMana = minMana;
         this.maxMana = maxMana;
+        count++;
     }
 
     //brain methods
@@ -62,6 +64,11 @@ public class Weapon
 
     public int getMaxMana() {
         return maxMana;
+    }
+
+    public static int getCount()
+    {
+        return count;
     }
 
     //setters
